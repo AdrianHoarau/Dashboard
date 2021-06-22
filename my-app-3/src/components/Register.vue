@@ -1,0 +1,38 @@
+<template>
+    <div class="vue-tempalte">
+
+        <h3>Register</h3>
+
+        <form action="/api/register" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+                <input type="text" class="form-control" placeholder="Name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+                <input type="text" class="form-control" placeholder="Username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+                <input type="text" class="form-control" placeholder="Email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+                <input type="password" class="form-control" placeholder="Password" name="password">
+        </div>
+        <div class="form-group">
+            <label for="password2">Confirm Password</label>
+                <input type="password" class="form-control" placeholder="Password" name="password2">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {}
+        }
+    }
+</script>

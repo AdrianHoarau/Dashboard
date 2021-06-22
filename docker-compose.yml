@@ -1,0 +1,27 @@
+version: "3"
+services:
+  api:
+    restart: always
+    build:
+      context: ./api
+    ports:
+      - "8080:8080"
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    volumes:
+      - ./.docker/mongodb/data/db/:/data/db/
+    ports:
+      - "27017:27017"
+  my-app-3:
+    build:
+      context: ./my-app-3
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    ports:
+      - '80:80'
+    volumes:
+      - "/app/my-app-3/node_modules"
+      - ".:/app"

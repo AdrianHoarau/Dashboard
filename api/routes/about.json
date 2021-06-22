@@ -1,0 +1,80 @@
+{
+    "client": {
+      "host": "10.101.53.35"
+    } ,
+    "server": {
+      "current_time": 1531680780,
+      "services": [{
+        "name": " weather " ,
+        "widgets": [{
+          "name": " weather " ,
+          "description": " Display the country, temperature and weather for a city" ,
+          "params": [{
+            "name": " city " ,
+            "type": " string "
+          }]
+        }]
+      } , {
+        "name": " spotify " ,
+        "widgets": [{
+          "name": " playlists" ,
+          "description": " Display the user's playlists " ,
+          "params": [{
+            "name": " link " ,
+            "type": " string "
+          }]
+        },
+        {
+          "name": " tops " ,
+          "description": " Display the user's 'n' best artists or songs ('n' corresponds to the number parameter)" ,
+          "params": [{
+            "name": " type " ,
+            "type": " string "
+          },
+          {
+            "name": " number " ,
+            "type": " integer "
+          }]
+        }]
+        },
+        {
+          "name": " youtube " ,
+          "widgets": [{
+          "name": " likes " ,
+          "description": "Display the user's last 'n' likes ('n' corresponds to the number parameter)" ,
+          "params": [{
+            "name": " number " ,
+            "type": " integer "
+          }]
+        },
+        {
+          "name": " subscribed " ,
+          "description": " Display the 'n' last user subscriptions ('n' corresponds to the number parameter)" ,
+          "params": [{
+            "name": " number " ,
+            "type": " integer "
+          }]
+        }]
+        },
+        {
+          "name": " twitter " ,
+          "widgets": [{
+            "name": " favorites " ,
+            "description": " Display the last 10 tweet favorited by the user" 
+          },
+          {
+            "name": " retweets " ,
+            "description": " Display the last 10 tweets retweeted by the user " 
+          },
+        {
+          "name": " tweet " ,
+          "description": " Tweet from the widget on the users twitter account" ,
+          "params": [{
+            "name": " line " ,
+            "type": " string "
+          }]
+        }]
+        }
+      ]
+    }
+  }
